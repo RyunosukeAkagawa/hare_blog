@@ -32,7 +32,7 @@ Route::resource('posts', PostController::class)
     ->only(['create', 'store', 'edit', 'update', 'destroy'])
     ->middleware('auth');
 
-Route::resource('post', PostController::class)
+Route::resource('posts', PostController::class)
     ->only(['show', 'index']);
 
 require __DIR__.'/auth.php';

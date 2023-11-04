@@ -56,8 +56,8 @@ class PostController extends Controller
         
         // return redirect()->route('posts.show', $post);
         return redirect()
-            ->route('posts.show', $post);
-
+            ->route('posts.show', $post)
+            ->with('notice', '記事を登録しました');
     }
 
     /**
